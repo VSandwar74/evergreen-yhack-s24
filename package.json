@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start"
   },
@@ -11,6 +11,7 @@
     "autoprefixer": "10.4.17",
     "geist": "^1.2.1",
     "next": "latest",
+    "next-video": "^0.17.1",
     "postcss": "8.4.33",
     "react": "18.2.0",
     "react-dom": "18.2.0",
