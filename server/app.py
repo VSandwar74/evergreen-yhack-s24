@@ -20,13 +20,13 @@ Get target & R_n
 '''
 
 @app.route('/zip/<zip_code>', methods=['GET'])
-def sprinkle(zip_code):
+def control_sys(zip_code):
     res = get_forecasts(zip_code)
     temp = res['temperature']
     wind = res['windSpeed']
     dew = res['dewpoint']
     prec = res['precipitation']
-    target = np.random.randint(0, 10) # TODO
+    target = 4 # mm/day
     output = sprinkle(target, prec, temp, wind, dew, y=0.066, Rn=20, G=0)
     return output
 
@@ -88,6 +88,9 @@ def main(address):
 
         # Get polygon data from location
         geo_polygon = get_poly(location['lat'], location['long'])
+
+        vec = control_sys(location['zip_code'])
+        return vec
 
         # print("")
         return geo_polygon
