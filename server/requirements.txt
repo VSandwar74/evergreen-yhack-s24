@@ -22,6 +22,6 @@ supabase==2.4.1
 supafunc==0.4.5
 typing_extensions==4.10.0
 websockets==12.0
-numpy
-flask
-guvicorn
+numpy==1.26.4
+flask==3.0.2
+guvicorn==21.2.0
