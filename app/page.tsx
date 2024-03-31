@@ -21,7 +21,7 @@ export default async function Index() {
   const isSupabaseConnected = canInitSupabaseClient();
 
   return (
-    <div className="flex-1 w-full flex flex-col gap-20 items-center bg-[#2E1A13]">
+    <div className="flex-1 w-full flex flex-col gap-20 items-center bg-[#F2E9DC]">
       <div className="w-full min-h-screen overflow-hidden max-h-screen">
         <main className="w-full self-end">
           <video 
@@ -32,11 +32,11 @@ export default async function Index() {
             className="absolute z-0 w-auto min-w-full min-h-full max-w-none" 
             />
           {/* Right Control */}
-          <div className="w-[35%] bg-[#2E1A13] absolute z-1 right-0 top-0 botttom-0 min-h-screen z-1 flex flex-col space-y-5 justify-center text-center">
-            <h1 className="tracking-wide text-[#A8A47B] text-6xl font-bold">
+          <div className="w-[35%] bg-[#F2E9DC] absolute z-1 right-0 top-0 botttom-0 min-h-screen z-1 flex flex-col space-y-5 justify-center text-center">
+            <h1 className="tracking-wide text-[#3A7D44] text-6xl font-bold">
               EVERGREEN
             </h1>
-            <h4 className="text-[optimized sprinkler application] text-[#A8A47B] text-2xl">
+            <h4 className="text-[optimized sprinkler application] text-[#3A7D44] text-2xl">
               optimized sprinkler application
             </h4>
             {"\n"}
