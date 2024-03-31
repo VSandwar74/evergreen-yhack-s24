@@ -20,8 +20,11 @@ def sprinkle(target, P, T, u2, dew, y=0.066, Rn=20, G=0): #calculates evapotrans
     #y = kPa/K, assume 0.066
     #G = MJ/m2/day, assume 0???
     #R = MJ/m2/day, assume ???
-    
-    ET = (0.408 * D(T) * (Rn - G) + y * (900 / T) * u2 * (vapor_pressure(T) - vapor_pressure(dew))) / (D + y(1 + 0.34 * u2))
+    num = (0.408 * D(T) * (Rn - G) + y * (900 / T) * u2 * (vapor_pressure(T) - vapor_pressure(dew)))
+    # den = (D + y(1 + 0.34 * u2))
+    # print(num, den)
+    ET = (0.408 * D(T) * (Rn - G) + y * (900 / T) * u2 * (vapor_pressure(T) - vapor_pressure(dew))) / (D(T) + y * (1 + 0.34 * u2))
     output = target - P + ET
-    return output
+    print(target, P, ET, output)
+    return str(output)
 
