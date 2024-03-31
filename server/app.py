@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 import numpy as np
-# from flask_cors import CORS
+from flask_cors import CORS
 from util.noaa import get_forecasts
 from util.evap import sprinkle
 from util.mapping import geo_to_cartesian, cartesian_to_geo;
@@ -11,7 +11,7 @@ from util.rpc import get_poly;
 import requests
 
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://droplyt.vercel.app/"]}})
 
 
 '''
@@ -43,6 +43,8 @@ def get_location(address):
     response = requests.get(url, headers=headers)
 
     d = dict()
+
+    print(response.status_code)
     # Check if the request was successful (status code 200)
     if response.status_code == 200:
         d['lat'] = response.json()[0]['lat']
