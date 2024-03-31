@@ -22,7 +22,7 @@ const FormComponent: React.FC = () => {
                 return;
             }
             // console.error('Error fetching address coordinates:', response.statusText);
-            // return null;
+            // return null;r
         } catch (error) {
             console.error('Error fetching address coordinates:', error);
             return null;

@@ -11,7 +11,7 @@ from util.rpc import get_poly;
 import requests
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://droplyt.vercel.app/"]}})
 
 
 '''
