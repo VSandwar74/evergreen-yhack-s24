@@ -21,3 +21,7 @@ def hello(zip_code):
     target = np.random.randint(0, 10) # TODO
     output = sprinkle(target, prec, temp, wind, dew, y=0.066, Rn=20, G=0)
     return output
+
+
+if __name__ == '__main__':
+    app.run(host='localhost', port=8000)
