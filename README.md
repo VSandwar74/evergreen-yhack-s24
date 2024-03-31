@@ -128,7 +128,7 @@ Here, $n$ is the horizontal distance between successive sprinklers, $m$ is the v
 
 Despite our best efforts, there is bound to be some loss! We can quantify a loss function accordingly by subtracting the average of the total function from the total function and taking the absolute value.
 
-$$ L\left(x,y\right)=\operatorname{abs}\left(T\left(x,y\right)-\frac{1}{\frac{mn}{q}\left(kn-n\right)}\int_{n}^{kn}\int_{0}^{\frac{mn}{q}}T\left(x_{1},y_{1}\right)dy_{1}dx_{1}\right) $$
+$$ L\left(x,y\right)=\text{abs}\left(T\left(x,y\right)-\frac{1}{\frac{mn}{q}\left(kn-n\right)}\int_{n}^{kn}\int_{0}^{\frac{mn}{q}}T\left(x_{1},y_{1}\right)dy_{1}dx_{1}\right) $$
 
 Finally, we determine an area function based on our parameters,
 
@@ -178,4 +178,4 @@ Our solution naturally scales with only a marginal increase in computational pro
 So, let's start here. Let's think carefully about how we use water, and where we can save it. The future is in our hands. Nurture growth. Save water. **Use DropLyt!**
 
 ---
-_Core technologies:_ React, TypeScript
+_Core technologies:_ React, TypeScript, Mathematica, SupaBase, Next, Tailwind, Flask, Railway, NodeJS, Deno
