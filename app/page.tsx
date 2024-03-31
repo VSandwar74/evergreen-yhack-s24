@@ -5,8 +5,6 @@ import ConnectSupabaseSteps from "@/components/tutorial/ConnectSupabaseSteps";
 import SignUpUserSteps from "@/components/tutorial/SignUpUserSteps";
 import Header from "@/components/Header";
 import Image from "next/image";
-import Video from 'next-video';
-import sprinklerVideo from "https://fggttoknlqspnlzgtkeo.supabase.co/storage/v1/object/public/video/sprinkler.mp4?t=2024-03-30T21%3A44%3A33.819Z";
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -26,7 +24,13 @@ export default async function Index() {
     <div className="flex-1 w-full flex flex-col gap-20 items-center bg-[#2E1A13]">
       <div className="w-full min-h-screen overflow-hidden max-h-screen">
         <main className="w-full self-end">
-          <Video src={sprinklerVideo} autoPlay loop muted className="absolute z-0 w-auto min-w-full min-h-full max-w-none" />
+          <video 
+            src="https://fggttoknlqspnlzgtkeo.supabase.co/storage/v1/object/public/video/sprinkler.mp4?t=2024-03-30T21%3A44%3A33.819Z" 
+            autoPlay 
+            loop 
+            muted 
+            className="absolute z-0 w-auto min-w-full min-h-full max-w-none" 
+            />
           {/* Right Control */}
           <div className="w-[35%] bg-[#2E1A13] absolute z-1 right-0 top-0 botttom-0 min-h-screen z-1 flex flex-col space-y-5 justify-center text-center">
             <h1 className="tracking-wide text-[#A8A47B] text-6xl font-bold">
