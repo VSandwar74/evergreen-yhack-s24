@@ -93,7 +93,7 @@ const FormComponent: React.FC = () => {
                             <div className='bg-[#3A7D44] rounded-xl w-[25%] p-4 text-center space-y-4'>
                                 <h2 className='text-3xl text-[#F2E9DC] font-bold'>Irrigation</h2>
                                 <p className='text-xl text-[#F2E9DC] font-bold'>{(150 / parseFloat(irrigation)).toFixed(2)}  min/day</p>
-                                <p className='text-lg text-[#F2E9DC] font-semibold'>At this rate you would save ${(((15.0 - (150/parseFloat(irrigation))) * 16 * 1/10 * 365).toFixed(2))} per year!</p>
+                                <p className='text-lg text-[#F2E9DC] font-semibold'>At this rate you would save ${(((15.0 - (150/parseFloat(irrigation))) * 6 * 1/10 * 365).toFixed(2))} per year!</p>
                                 <p className='text-lg text-[#F2E9DC] font-semibold'>You should turn on your sprinklers for 5:52 AM, for optimal savings</p>
                                 <p className='text-lg text-[#F2E9DC] font-semibold'>The optimized radius is 8 feet</p>
                             </div>

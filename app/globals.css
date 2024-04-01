@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
+  @font-face {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+  }
   :root {
     --background: 200 20% 98%;
     --btn-background: 200 10% 91%;

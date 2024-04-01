@@ -34,11 +34,11 @@ export default async function Index() {
             />
           {/* Right Control */}
           <div className="w-[35%] bg-[#F2E9DC] absolute z-1 right-0 top-0 botttom-0 min-h-screen z-1 flex flex-col space-y-5 justify-center text-center">
-            <h1 className="tracking-wide text-[#3A7D44] text-6xl font-bold">
-              EVERGREEN
+            <h1 className="tracking-wide text-[#3A7D44] text-6xl font-bold font-display">
+              DropLyt
             </h1>
             <h4 className="text-[optimized sprinkler application] text-[#3A7D44] text-2xl">
-              optimized sprinkler application
+              Nurturing growth. Saving water.
             </h4>
             {"\n"}
             {isSupabaseConnected && <AuthButton />}

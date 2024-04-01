@@ -30,7 +30,7 @@ export default async function AuthButton() {
   ) : (
     <Link
       href="/login"
-      className="py-2 px-3 flex rounded-md no-underline bg-[#3A7D44] hover:bg-[#CDD193] mx-6 text-center text-[#F2E9DC] text-2xl font-bold items-center justify-center"
+      className="py-2 px-3 flex rounded-md no-underline bg-[#3A7D44] hover:bg-[#CDD193] mx-6 text-center text-[#F2E9DC] text-2xl font-bold items-center justify-center font-display"
     >
       Login
     </Link>

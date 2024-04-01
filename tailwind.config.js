@@ -5,6 +5,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      display: ["Red Hat Display", "Georgia", "serif"],
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",

@@ -8,7 +8,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Evergreen: Next Gen Irrigation",
+  title: "DropLyt: Next Gen Irrigation",
   description: "Irrigation made easy using math, technology and a bit of magic ;)",
 };
 

@@ -32,7 +32,7 @@ export default async function ProtectedPage() {
   // };
 
   return (
-    <div className="flex-1 w-full flex flex-col gap-20 items-center bg-[#F2E9DC]">
+    <div className="flex-1 w-full flex flex-col gap-20 items-center bg-[#F2E9DC] font-display">
     <div className="w-full min-h-screen overflow-hidden max-h-screen">
       <main className="w-full self-end flex flex-col items-center justify-center pt-6">
         <FormComponent />
